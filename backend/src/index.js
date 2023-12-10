@@ -24,8 +24,8 @@ const server = app.listen(port, () => {
 
 const io = new Server(server, {
   cors: {
-    // origin: "https://real-time-code-puskar.vercel.app",
-    origin: "https://puskar-real.onrender.com",
+    origin: "https://real-time-code-puskar.vercel.app",
+    // origin: "https://puskar-real.onrender.com",
     methods: ["GET", "POST"],
   },
 });
