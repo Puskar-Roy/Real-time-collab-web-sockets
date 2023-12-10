@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 import io from 'socket.io-client'
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://puskar-real.onrender.com");
 function App() {
   // const [count, setCount] = useState("")
   const [code, setCode] = useState("")
