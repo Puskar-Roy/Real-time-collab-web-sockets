@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 import io from 'socket.io-client'
-const socket = io.connect("https://real-time-collab-web-sockets-puskar-roy.vercel.app");
+// const socket = io.connect("https://real-time-collab-web-sockets-puskar-roy.vercel.app");
+const socket = io.connect("http://localhost:5000");
 function App() {
   // const [count, setCount] = useState("")
   const [code, setCode] = useState("")

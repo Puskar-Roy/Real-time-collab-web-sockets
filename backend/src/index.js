@@ -5,7 +5,7 @@ const app = express();
 
 
 app.use(express.json());
-app.use(cors())
+app.use(cors({ credentials: true, origin: true }));
 
 const port = 5000;
 
@@ -24,7 +24,8 @@ const server = app.listen(port, () => {
 
 const io = new Server(server, {
   cors: {
-    origin: "https://real-time-code-puskar.vercel.app",
+    // origin: "https://real-time-code-puskar.vercel.app",
+    origin: "http://localhost:5173",
     methods: ["GET", "POST"],
   },
 });
