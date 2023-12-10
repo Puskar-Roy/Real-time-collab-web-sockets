@@ -38,3 +38,5 @@ io.on("connection", socket=>{
     })
 
 })
+
+module.exports = { app }
